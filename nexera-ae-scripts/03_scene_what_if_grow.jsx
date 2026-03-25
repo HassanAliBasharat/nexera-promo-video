@@ -78,8 +78,8 @@ diamond.property("ADBE Transform Group").property("ADBE Position").setValue([240
 
 // Glow effect
 var diaGlow = diamond.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-diaGlow.property("ADBE Glo2-0002").setValue(25);
-diaGlow.property("ADBE Glo2-0003").setValue(1.2);
+diaGlow.property("ADBE Glo2-0003").setValue(25);
+diaGlow.property("ADBE Glo2-0004").setValue(1.2);
 
 // Rotation: starts 45° (diamond), continuous rotation
 diamond.property("ADBE Transform Group").property("ADBE Rotate Z").expression = "45 + time * 20";
@@ -103,8 +103,8 @@ diaAsterisk.property("ADBE Transform Group").property("ADBE Transform Scale").se
 
 // Extra glow
 var diaAstGlow = diaAsterisk.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-diaAstGlow.property("ADBE Glo2-0002").setValue(40);
-diaAstGlow.property("ADBE Glo2-0003").setValue(1.5);
+diaAstGlow.property("ADBE Glo2-0003").setValue(40);
+diaAstGlow.property("ADBE Glo2-0004").setValue(1.5);
 
 // ============================================================================
 // 4. TEXT: "What if this could"
@@ -256,8 +256,8 @@ taOp.setValueAtTime(10.5, 0);
 
 // Glow ramp
 var taGlow = transAsterisk.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-taGlow.property("ADBE Glo2-0002").setValue(60);
-var taGlowInt = taGlow.property("ADBE Glo2-0003");
+taGlow.property("ADBE Glo2-0003").setValue(60);
+var taGlowInt = taGlow.property("ADBE Glo2-0004");
 taGlowInt.setValueAtTime(10.0, 1.0);
 taGlowInt.setValueAtTime(10.5, 3.0);
 

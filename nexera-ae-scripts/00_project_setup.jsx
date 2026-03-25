@@ -160,10 +160,9 @@ for (var p = 0; p < 8; p++) {
 
 // Add Glow effect
 var glowEffect = asteriskShape.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-glowEffect.property("ADBE Glo2-0001").setValue(60);  // Glow Threshold
-glowEffect.property("ADBE Glo2-0002").setValue(30);  // Glow Radius
-glowEffect.property("ADBE Glo2-0003").setValue(0.8); // Glow Intensity
-glowEffect.property("ADBE Glo2-0005").setValue([GLOW_BLUE[0], GLOW_BLUE[1], GLOW_BLUE[2], 1]); // Glow Color
+glowEffect.property("ADBE Glo2-0002").setValue(60);  // Glow Threshold
+glowEffect.property("ADBE Glo2-0003").setValue(30);  // Glow Radius
+glowEffect.property("ADBE Glo2-0004").setValue(0.8); // Glow Intensity
 
 // Rotation expression: 45 degrees per second
 asteriskShape.property("ADBE Transform Group").property("ADBE Rotate Z").expression = "time * 45";

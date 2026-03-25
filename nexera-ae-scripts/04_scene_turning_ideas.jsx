@@ -246,8 +246,8 @@ astIcon.property("ADBE Transform Group").property("ADBE Position").setValue([COM
 astIcon.property("ADBE Transform Group").property("ADBE Transform Scale").setValue([35, 35, 100]);
 
 var astGlow = astIcon.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-astGlow.property("ADBE Glo2-0002").setValue(30);
-astGlow.property("ADBE Glo2-0003").setValue(1.2);
+astGlow.property("ADBE Glo2-0003").setValue(30);
+astGlow.property("ADBE Glo2-0004").setValue(1.2);
 
 astIcon.property("ADBE Transform Group").property("ADBE Position").expression =
     "[value[0], value[1] + Math.sin(time*1.5)*8]";
