@@ -227,8 +227,8 @@ tabletFrame.property("ADBE Transform Group").property("ADBE Position").setValue(
 
 // Glow
 var tfGlow = tabletFrame.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-tfGlow.property("ADBE Glo2-0002").setValue(20);
-tfGlow.property("ADBE Glo2-0003").setValue(0.8);
+tfGlow.property("ADBE Glo2-0003").setValue(20);
+tfGlow.property("ADBE Glo2-0004").setValue(0.8);
 
 // Gentle Y rotation oscillation expression
 tabletFrame.property("ADBE Transform Group").property("ADBE Rotate Y").expression =

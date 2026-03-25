@@ -148,8 +148,8 @@ setSmooth(tubeEnd, 2);
 
 // Add glow
 var tubeGlow = tube.property("ADBE Effect Parade").addProperty("ADBE Glo2");
-tubeGlow.property("ADBE Glo2-0002").setValue(20);
-tubeGlow.property("ADBE Glo2-0003").setValue(0.6);
+tubeGlow.property("ADBE Glo2-0003").setValue(20);
+tubeGlow.property("ADBE Glo2-0004").setValue(0.6);
 
 // ============================================================================
 // 3. TEXT: "Clear actions"
